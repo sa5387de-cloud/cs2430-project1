@@ -1,4 +1,5 @@
-# CS2430 Project 1
+# CS2430 Programming Project 1
+# Sets, Multisets, and Natural-Language Data Queries
 # Hanseo Yun
 
 # =====================================================
@@ -27,7 +28,6 @@ def difference(A, B):
 
 def symmetric_difference(A, B):
     return union(difference(A,B), difference(B,A))
-
 
 def run_part1(A, B, case_name):
     print(f"\n===== Part 1 - {case_name} =====\n")
@@ -59,7 +59,7 @@ run_part1(A3, B3, "Test Case 3 (Disjoint Sets)")
 
 
 # =====================================================
-# PART 2: Multisets
+# PART 2: Multisets (Bags)
 # =====================================================
 
 def multiset_union(A,B):
@@ -88,7 +88,6 @@ def multiset_sum(A,B):
     for k in keys:
         result[k] = A.get(k,0) + B.get(k,0)
     return result
-
 
 def run_part2(A, B, case_name):
     print(f"\n===== Part 2 - {case_name} =====\n")
