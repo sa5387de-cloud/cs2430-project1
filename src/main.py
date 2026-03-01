@@ -93,3 +93,8 @@ print("Union:", multiset_union(multiA, multiB))
 print("Intersection:", multiset_intersection(multiA, multiB))
 print("Difference (A-B):", multiset_difference(multiA, multiB))
 print("Sum (A+B):", multiset_sum(multiA, multiB))
+
+# -----------------------------
+# Prevent window from closing
+# -----------------------------
+input("\nPress Enter to exit...")
